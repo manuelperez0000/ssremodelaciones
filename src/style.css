@@ -1,0 +1,32 @@
+/* Ajusta el video al fondo de la pantalla */
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Ajusta el video para que cubra toda la pantalla */
+  z-index: -1; /* Envía el video al fondo */
+}
+
+/* Estilos del contenido para que sea legible */
+.content {
+  position: absolute;
+  z-index: 1; /* Coloca el contenido por encima del video */
+  background: rgba(255, 255, 255, 0.543); /* Agrega un fondo semitransparente */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mh-100{
+  min-height: 100vh;
+}
+
+.bg-gray{
+  background-color: rgb(25, 24, 25);
+}
